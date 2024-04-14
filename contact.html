@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* Light Mode */
+        body {
+            background-color: #343a40;
+            color: antiquewhite;
+        }
+
+        .card-body {
+            background-color: white;
+            color: #343a40;
+        }
+
+        /* Dark Mode */
+
+        .navbar-dark .navbar-nav .nav-link {
+            color: rgba(255, 255, 255, .5);
+        }
+
+        .navbar-dark .navbar-nav .nav-link:hover {
+            color: rgba(255, 255, 255, .75);
+        }
+    </style>
+</head>
+
+<body class="light-mode">
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Contact Me</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <label class="switch">
+                            <input id="modeToggle" type="checkbox">
+                            <span class="slider round"></span>
+                        </label>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mt-5">
+        <h1>Contact Me</h1>
+        <p>You can contact me via the following:</p>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <h5 class="card-title">Email</h5>
+                        <img src="https://fmipa.unj.ac.id/biologi/wp-content/uploads/2017/09/google-gmail-logo-icon-66139.png"
+                            style="width: 18rem;" class="" alt="">
+                        <p class="card-text">You can contact me via Email.</p>
+                        <a href="mailto:rendyharvest@gmail.com" class="btn btn-primary">Contact Me</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <h5 class="card-title">WhatsApp</h5>
+                        <img src="https://w7.pngwing.com/pngs/9/423/png-transparent-whatsapp-square-chat-design-message-material-communication-material-square-apps-icon.png"
+                            style="width: 18rem;" alt="">
+                        <p class="card-text">You can contact me via WhatsApp.</p>
+                        <a href="https://wa.me/6289647300193" class="btn btn-primary">Contact Me</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <h5 class="card-title">Instagram</h5>
+                        <img src="https://i.pinimg.com/736x/ad/67/e6/ad67e6346dc1a351ea4a332effecbdf5.jpg"
+                            style="width: 18rem;" alt="">
+                        <p class="card-text">You can contact me via Instagram.</p>
+                        <a href="https://www.instagram.com/userrrrnn77" class="btn btn-primary">Contact Me</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <script>
+        // Mode toggle
+        document.getElementById('modeToggle').addEventListener('change', function () {
+            if (this.checked) {
+                document.body.classList.add('dark-mode');
+                document.body.classList.remove('light-mode');
+            } else {
+                document.body.classList.remove('dark-mode');
+                document.body.classList.add('light-mode');
+            }
+        });
+    </script>
+
+</body>
+
+</html>

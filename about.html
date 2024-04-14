@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* Light Mode */
+
+        body {
+            background-color: #343a40;
+            color: #f8f9fa;
+        }
+
+
+
+        .card-body {
+            background-color: #343a40;
+            color: aqua;
+        }
+
+        /* Dark Mode */
+
+
+
+        .navbar-dark .navbar-nav .nav-link {
+            color: rgba(255, 255, 255, .5);
+        }
+
+        .navbar-dark .navbar-nav .nav-link:hover {
+            color: rgba(255, 255, 255, .75);
+        }
+    </style>
+</head>
+
+<body class="light-mode">
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">My Profile</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <label class="switch">
+                            <input id="modeToggle" type="checkbox">
+                            <span class="slider round"></span>
+                        </label>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mt-5">
+        <div class="row">
+            <img src="./asest/cover8.jpg" class="rounded mx-auto d-block" style="height: 18rem;" alt="">
+        </div>
+        <h1>About Me</h1>
+        <p>My name is Rendy Agus Saputra, I was born in August 2004, I graduated from SMK Negeri 11 Semarang majoring in
+            Graphic Design, I graduated in 2022 and went straight to work, I have 2 years of work experience in various
+            fields. I really like learning new things, currently I am learning to create websites and web development to
+            broaden my knowledge.</p>
+    </div>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <script>
+        // Mode toggle
+        document.getElementById('modeToggle').addEventListener('change', function () {
+            if (this.checked) {
+                document.body.classList.add('dark-mode');
+                document.body.classList.remove('light-mode');
+            } else {
+                document.body.classList.remove('dark-mode');
+                document.body.classList.add('light-mode');
+            }
+        });
+    </script>
+
+</body>
+
+</html>
